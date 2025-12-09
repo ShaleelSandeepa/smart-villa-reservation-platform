@@ -175,7 +175,7 @@ graph TB
 ### 1. Clone Repository
 
 ```bash
-git clone [YOUR_REPOSITORY_URL]
+git clone https://github.com/ShaleelSandeepa/smart-villa-reservation-platform.git
 cd smart-villa-reservation-platform
 ```
 
@@ -203,13 +203,13 @@ DIALOGFLOW_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY--
 
 # Villa Configuration
 VILLA_NAME=Villa Shaa
-VILLA_PHONE=${VILLA_PHONE}
-VILLA_EMAIL=${VILLA_EMAIL}
-VILLA_SECONDARY_PHONE=${VILLA_SECONDARY_PHONE}
-VILLA_SECONDARY_EMAIL=${VILLA_SECONDARY_EMAIL}
-VILLA_WHATSAPP=${VILLA_WHATSAPP}
-VILLA_WEBSITE=${VILLA_WEBSITE}
-VILLA_LOCATION=${VILLA_LOCATION}
+VILLA_PHONE=your-villa-phone-number
+VILLA_EMAIL=your-villa-email
+VILLA_SECONDARY_PHONE=your-secondary-phone
+VILLA_SECONDARY_EMAIL=your-secondary-email
+VILLA_WHATSAPP=your-whatsapp-number
+VILLA_WEBSITE=your-villa-website
+VILLA_LOCATION=your-villa-location
 
 # Booking Configuration
 CHECK_IN_TIME=2:00 PM
