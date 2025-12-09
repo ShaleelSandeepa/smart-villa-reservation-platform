@@ -10,7 +10,7 @@
 
 **🏖️ Luxury Villa Rental Platform with Intelligent AI Chatbot**
 
-[Live Demo](#) • [Documentation](./CHATBOT_ARCHITECTURE_DIAGRAMS.md) • [Project Report](./CHATBOT_PROJECT_REPORT.md)
+[Live Demo](your-deployment-url) • [Documentation](./CHATBOT_ARCHITECTURE_DIAGRAMS.md) • [Project Report](./CHATBOT_PROJECT_REPORT.md)
 
 </div>
 
@@ -175,8 +175,8 @@ graph TB
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/ShaleelSandeepa/smart-villa.git
-cd smart-villa
+git clone [YOUR_REPOSITORY_URL]
+cd smart-villa-reservation-platform
 ```
 
 ### 2. Install Dependencies
@@ -187,7 +187,13 @@ npm install
 
 ### 3. Environment Configuration
 
-Create `.env.local` file:
+Copy `.env.example` to `.env.local` and fill in your actual values:
+
+```bash
+cp .env.example .env.local
+```
+
+Then edit `.env.local` file:
 
 ```env
 # Google Cloud DialogFlow Configuration
@@ -197,15 +203,23 @@ DIALOGFLOW_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY--
 
 # Villa Configuration
 VILLA_NAME=Villa Shaa
-VILLA_PHONE=+94 77 794 3393
-VILLA_EMAIL=leelindika75@gmail.com
-VILLA_ADDRESS=Matara, Sri Lanka
+VILLA_PHONE=${VILLA_PHONE}
+VILLA_EMAIL=${VILLA_EMAIL}
+VILLA_SECONDARY_PHONE=${VILLA_SECONDARY_PHONE}
+VILLA_SECONDARY_EMAIL=${VILLA_SECONDARY_EMAIL}
+VILLA_WHATSAPP=${VILLA_WHATSAPP}
+VILLA_WEBSITE=${VILLA_WEBSITE}
+VILLA_LOCATION=${VILLA_LOCATION}
 
 # Booking Configuration
 CHECK_IN_TIME=2:00 PM
 CHECK_OUT_TIME=11:00 AM
 MAX_GUESTS=8
 CANCELLATION_HOURS=48
+
+# Google Apps Script URLs
+GOOGLE_SHEETS_SCRIPT_URL=your-google-apps-script-web-app-url-here
+GOOGLE_AVAILABILITY_SCRIPT_URL=your-google-availability-script-url-here
 ```
 
 ### 4. Setup DialogFlow
@@ -403,12 +417,12 @@ We welcome contributions to improve Villa Shaa's chatbot system!
 ## 📞 Contact & Support
 
 **Villa Shaa**
-- 📧 Email: leelindika75@gmail.com
-- 📱 Phone/WhatsApp: +94 77 794 3393
-- 📍 Location: Matara, Sri Lanka
+- 📧 Email: Contact details available in environment variables
+- 📱 Phone/WhatsApp: Contact details available in environment variables
+- 📍 Location: Contact details available in environment variables
 
 **Developer**
-- 👨‍💻 GitHub: [@ShaleelSandeepa](https://github.com/ShaleelSandeepa)
+- 👨‍💻 GitHub: [Your GitHub Profile]
 - 📧 Email: [Your Email]
 
 ---
@@ -433,6 +447,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ If you found this project helpful, please give it a star on GitHub! ⭐**
 
-Made with ❤️ for Villa Shaa by [Shaleel Sandeepa](https://github.com/ShaleelSandeepa)
+Made with ❤️ for Villa Shaa
 
 </div>
