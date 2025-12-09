@@ -1,0 +1,22 @@
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
+// SYSCONFIG VARIABLES
+export const SYS_CONFIG = {
+  TYPING_DELAY_MS: 800,
+  BOT_NAME: "Shaaya",
+
+  NEW_BOOKING_YES: "YES_DO_THE_BOOKING",
+  NEW_BOOKING_NO: "NO_DO_NOT_DO_THE_BOOKING",
+  BOOK_NOW: "BOOK_NOW",
+  BOOK_LATER: "BOOK_LATER",
+  CONFIRM_CHECKIN_DATE: "CONFIRM_CHECKIN_DATE",
+  CHANGE_CHECKIN_DATE: "CHANGE_CHECKIN_DATE",
+  CONFIRM_CHECKOUT_DATE: "CONFIRM_CHECKOUT_DATE",
+  CHANGE_CHECKOUT_DATE: "CHANGE_CHECKOUT_DATE",
+  PROCEED_CHECK_AVAILABILITY: "PROCEED_CHECK_AVAILABILITY",
+};
